@@ -8,7 +8,7 @@ const CartItem = ({ item }) => {
   let opts = { format: "%s%v", symbol: "€" };
   return (
     <li className="CartItem__item">
-      <img src={item.image} alt="product-image" />
+      <img src={item.image} alt="product" />
       <div>
         {item.name} {formatCurrency(`${item.price}`, opts)}
       </div>
