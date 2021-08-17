@@ -1,6 +1,6 @@
 import products from "../data";
 import "./HomePage.css";
-import ProductCard from "../components/productCard";
+import ProductCard from "../components/productCard/ProductCard";
 
 const HomePage = () => {
   return (
