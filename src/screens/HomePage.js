@@ -1,5 +1,5 @@
 import products from "../data";
-import "./HomeScreen.css";
+import "./HomePage.css";
 import ProductCard from "../components/productCard";
 
 const HomePage = () => {
