@@ -3,7 +3,7 @@ import { useContext } from "react";
 import CartContext from "../../context/cart/CartContext";
 
 const Nav = () => {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems, toggleCart } = useContext(CartContext);
   return (
     <nav>
       <div className="nav__left">Store</div>
@@ -15,7 +15,11 @@ const Nav = () => {
       </div>
       <div className="nav__right">
         <div className="cart__icon">
-          <i className="fa fa-shopping-cart" aria-hidden="true" />
+          <i
+            className="fa fa-shopping-cart"
+            aria-hidden="true"
+            onClick={toggleCart}
+          />
           {cartItems.length > 0 && (
             <div className="item__count">
               <span>{cartItems.length}</span>
